@@ -13,7 +13,6 @@ With the repo, you can
 
 - Normalize actions according to the statistics for unified training with *normalize_actoins.py* and *rt-x_data_cfg.yaml*. 
 
----
 
 ### Features:
 - For extracting features, we use multi-processing among datasets for better efficiency.
