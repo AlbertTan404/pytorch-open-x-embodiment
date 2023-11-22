@@ -42,7 +42,7 @@ def instantiate_from_config(config, extra_kwargs=dict()):
 
 
 def get_train_val_loader(dataset, **dataloader_kwargs):
-    train_ds, val_ds = dataset.split_train_val(train_ratio=0.98)
+    train_ds, val_ds = dataset.split_train_val(train_ratio=0.95)
     train_loader = DataLoader(dataset=train_ds, **dataloader_kwargs, shuffle=True)
     val_loader = DataLoader(dataset=val_ds, **dataloader_kwargs, shuffle=False)
     return train_loader, val_loader

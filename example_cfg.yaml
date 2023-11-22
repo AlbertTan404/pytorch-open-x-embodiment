@@ -13,11 +13,9 @@ model:
 trainer:
   target: lightning.pytorch.trainer.Trainer
   kwargs:
-    devices: [0, 1, 2, 3]
-    # devices: [0]
-    max_epochs: 200
-    pretrain_max_epochs: 10
-    check_val_every_n_epoch: 20
+    devices: [0, 1]
+    max_epochs: 10
+    check_val_every_n_epoch: 1
     log_every_n_steps: 10
     logger:
       target: lightning.pytorch.loggers.wandb.WandbLogger

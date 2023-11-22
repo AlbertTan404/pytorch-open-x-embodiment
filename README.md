@@ -1,4 +1,4 @@
-# Data pre-processing code on Open-X-Embodiment for PyTorch users. 
+# Data pre-processing and training code on Open-X-Embodiment for PyTorch users. 
 
 
 ### Usages:
@@ -12,6 +12,10 @@ With the repo, you can
 - Extract image and language features for most efficient policy model training with *extract_language_features.py* and *extract_image_features.py*. (we use R3M and CLIP, and it's easy for you to customize it)
 
 - Normalize actions according to the statistics for unified training with *normalize_actoins.py* and *rt-x_data_cfg.yaml*. 
+
+and
+
+- Customize you model and directly train it!
 
 
 ### Features:
