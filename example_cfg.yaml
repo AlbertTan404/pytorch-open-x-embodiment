@@ -1,0 +1,47 @@
+seed: 42
+horizon: 16
+task: rt-x
+
+model:
+  target: example_model.ExampleModel
+  kwargs:
+    model_kwargs:
+
+    training_kwargs:
+
+
+trainer:
+  target: lightning.pytorch.trainer.Trainer
+  kwargs:
+    devices: [0, 1, 2, 3]
+    # devices: [0]
+    max_epochs: 200
+    pretrain_max_epochs: 10
+    check_val_every_n_epoch: 20
+    log_every_n_steps: 10
+    logger:
+      target: lightning.pytorch.loggers.wandb.WandbLogger
+      kwargs: 
+        project: 
+        name: 
+    num_sanity_val_steps: 2
+
+dataset:
+  target: example_dataset.MultiDataset
+  kwargs:
+    root_dir: 
+    dataset_names:
+    data_cfg: 
+    horizon: ${horizon}
+    get_language: True
+    get_canonical_image: 
+    get_image_dict: 
+    get_low_dim: 
+    feature_type: r3m_resnet34
+    # feature_type: clip_ViT-B32
+
+dataloader:
+  batch_size: 512
+  num_workers: 32
+  pin_memory: True
+  persistent_workers: True

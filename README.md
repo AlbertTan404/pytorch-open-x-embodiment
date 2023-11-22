@@ -36,6 +36,10 @@ conda install h5py yaml jupyter tqdm omegaconf gdown matplotlib
 conda install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 pytorch-cuda=11.6 -c pytorch -c nvidia
 ```
 
+```
+pip install lightning, transformers, diffusers
+```
+
 - optional: install clip and r3m
 ```
 pip install git+https://github.com/openai/CLIP.git
