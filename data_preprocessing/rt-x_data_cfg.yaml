@@ -1,3 +1,5 @@
+average_step_per_episode: 100
+
 datasets:
   _maniskill_dataset_converted_externally_to_rlds:
     language:
@@ -747,7 +749,7 @@ datasets:
       image: [120, 120, 3]
     canonical_view: image
 
-  _dlr_sara_pour_converted_externally_to_rlds: # 图片和数据对不上
+  _dlr_sara_pour_converted_externally_to_rlds:
     language:
       outer_key: language_instruction
       inner_key:
@@ -868,7 +870,7 @@ datasets:
       wrist_image: [240, 320, 3]
     canonical_view: image
 
-  _uiuc_d3field: # 需要再对一下
+  _uiuc_d3field:
     language:
       outer_key: language_instruction
       inner_key:

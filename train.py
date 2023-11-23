@@ -88,7 +88,7 @@ def preprocess_config(config, args):
     datasets_cfg = data_cfg.datasets
     config.dataset.kwargs.root_dir = f'YOUR_DATASET_ROOT_DIR_HERE/{task}_processed'
     config.dataset.kwargs.data_cfg = datasets_cfg
-    config.dataset.kwargs.dataset_names = [key for key in datasets_cfg.keys() if key[0] != '_' and '_mh' not in key]
+    config.dataset.kwargs.dataset_names = [key for key in datasets_cfg.keys() if key[0] != '_']
     config.dataset.kwargs.average_step_per_episode = data_cfg.average_step_per_episode
 
     # feature dimension:
