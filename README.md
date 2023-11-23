@@ -1,6 +1,9 @@
 # Data pre-processing and training code on Open-X-Embodiment for PyTorch users. 
 
 
+### Dataset access:
+Refer to the [rt-x official repo](https://github.com/google-deepmind/open_x_embodiment#dataset-access)
+
 ### Usages:
 With the repo, you can
 - Convert tfds to h5 file with *convert_tfds_to_h5.py*  # converting large datasets takes MASSIVE disk space. (up to 8 TB for kuka)
